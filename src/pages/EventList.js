@@ -31,7 +31,7 @@ function EventList() {
           return (
             <Card
               sx={{
-                maxWidth: 345,
+                width: 345,
                 margin: "15px",
                 display: "flex",
                 flexDirection: "column",
@@ -47,9 +47,9 @@ function EventList() {
                 <Typography variant="subtitle2" gutterBottom component="div">
                   {event.location}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                {/* <Typography variant="body2" color="text.secondary">
                   {event.description}
-                </Typography>
+                </Typography> */}
                 <Box sx={{ display: "flex", justifyContent: "space-between" }}>
                   <Typography id="modal-modal-title" variant="h6" component="h2">
                     {event.data}

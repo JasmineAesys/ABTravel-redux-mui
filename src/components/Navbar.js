@@ -30,8 +30,6 @@ function Navbar() {
           <Typography
             variant="h6"
             noWrap
-            component="a"
-            href="/"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -83,8 +81,6 @@ function Navbar() {
           <Typography
             variant="h5"
             noWrap
-            component="a"
-            href=""
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
@@ -102,6 +98,11 @@ function Navbar() {
             <Link to="/" style={{ textDecoration: "none" }}>
               <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
                 Events
+              </Button>
+            </Link>
+            <Link to="/stats" style={{ textDecoration: "none" }}>
+              <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
+                Statistics
               </Button>
             </Link>
           </Box>
